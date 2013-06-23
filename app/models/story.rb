@@ -1,6 +1,10 @@
 class Story < ActiveRecord::Base
   attr_accessible :guid, :kind, :name, :published_at, :summary, :url
   
+  def self.by_kind(name)
+    where(kind: name)
+  end
+  
   def self.update_feed(feed_url, rss_kind)
     feed = Feedzirra::Feed.fetch_and_parse(feed_url)
     add_entries(feed.entries, rss_kind)
