@@ -17,16 +17,10 @@
 
   <div id="nav-container" class="clearfix">
     <ul id="nav" >
-      <li><a href="home" class="nav-line">HOME</a></li>
-      <li><a href="<%= world_path %>" class="nav-line">WORLD</a></li>
-      <li><a href="<%= us_path %>" class="nav-line">U.S.</a></li>
-      <li><a href="<%= business_path %>" class="nav-line">BUSINESS</a></li>
-      <li><a href="<%= stocks_path %>" class="nav-line">STOCKS</a></li>
-      <li><a href="<%= politics_path %>" class="nav-line">POLITICS</a></li>
-      <li><a href="<%= crime_path %>" class="nav-line">CRIME</a></li>
-      <li><a href="<%= technology_path %>" class="nav-line">TECHNOLOGY</a></li>
-      <li><a href="<%= health_path %>" class="nav-line">HEALTH</a></li>
-      <li><a href="<%= entertainment_path %>" class="nav-line">ENTERTAINMENT</a></li>
+      <li><a href="/" class="nav-line">HOME</a></li>
+      <% @pages.each do |page| %>
+        <li><%= link_to(page.name.upcase, page_path(page), class: 'nav-line') %></li>
+      <% end %>
       <li><a href="<%= contact_path %>">CONTACT</a></li>
     </ul>
   </div>

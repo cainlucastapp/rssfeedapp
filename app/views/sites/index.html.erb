@@ -1,129 +1,15 @@
 <section id="sites-index">
-  
   <div id="sites-index-container">
-
-    <div id="left-side" class="pull-left">
-      
-      <div id="stories-wrapper">
-      
-      <div id="world-stories" class="pull-left">
-        <h1>WORLD</h1>
-        
-        <% @worldrss.each do |story| %>
-			  <div class="story">
-    			<h2><%= story.name %></h2>
-   				<p><%= Nokogiri::HTML(story.summary).text %></p>
-   				<a href="<%= story.url %> ">Read More</a>
-			  </div>
-		<% end %>
-      </div>
-      
-      <div id="us-stories" class="pull-left">
-        <h1>U.S.</h1>
-        	<% @usrss.each do |story| %>
-			  <div class="story">
-			    <h2><%= story.name %></h2>
-			    <p><%= Nokogiri::HTML(story.summary).text %></P>
-			     <a href="<%= story.url %> ">Read More</a>   
- 			  </div>
-<% end %>
-        	
-      </div>
-      
-      </div>
-      
-      
-      <div id="issue-wrapper" class="pull-left">
-        
-        <div id="issue-divider">
-          
-          <div id="top-issue" class="pull-left issue-line">
-            <h1>BUSINESS</h1>
-            	<% @businessrss.each do |story| %>
-				  <div class="story">
-				    <p><%= story.name %>... <a href="<%= story.url %> ">Read More</a></p>
-  				  </div>
-				<% end %>
+    <% @top_stories.each_slice(2) do |group| %>
+      <div class="column pull-left">
+        <% group.each do |count| %>
+          <div class="story">
+            <h2>Feed Title</h2>
+            <p>Feed goes here</p>
+            <%= count %>
           </div>
-      
-          <div id="top-issue" class="pull-left issue-line">
-            <h1>POLITICS</h1>
-            	<% @politicsrss.each do |story| %>
-				  <div class="story">
-				    <p><%= story.name %>... <a href="<%= story.url %> ">Read More</a></p>
-  				  </div>
-				<% end %>   
-          </div>
-      
-          <div id="top-issue" class="pull-left">
-            <h1>CRIME</h1>
-              	<% @crimerss.each do |story| %>
-				  <div class="story">
-				    <p><%= story.name %>... <a href="<%= story.url %> ">Read More</a></p>
-  				  </div>
-				<% end %>   
-          </div>
-      
-        </div>
-       
+        <% end %>
       </div>
-      
-    </div>
-    
-    
-    <div id="right-side" class="pull-left">
-      
-      <div id="row" class="pull-left">
-        
-        <div id="side-issue-wrapper">
-        
-          <div id="side-issue" class="side-divider">
-            <h1>TECHNOLOGY</h1>
-            	<% @technologyrss.each do |story| %>
- 					<div class="story">
-				    	<p><%= story.name %>... <a href="<%= story.url %> ">Read More</a></p>
-  				 	</div>
-				<% end %>
-          </div>
-        
-          <div id="side-issue" class="side-divider">
-            <h1>HEALTH</h1>
-            	<% @healthrss.each do |story| %>
- 					<div class="story">
-				    	<p><%= story.name %>... <a href="<%= story.url %> ">Read More</a></p>
-  				 	</div>
-				<% end %>
-          </div>
-        
-          <div id="side-issue">
-            <h1>ENTERTAINMENT</h1>
-            <% @entertainmentrss.each do |story| %>
- 					<div class="story">
-				    	<p><%= story.name %>... <a href="<%= story.url %> ">Read More</a></p>
-  				 	</div>
-				<% end %>
-          </div>
-        
-        </div>
-        
-      </div>
-      
-      <div id="row" class="pull-left">
-        
-        <div id="stock-row">
-          <h1>STOCKS</h1>
-          	<% @stocksrss.each do |story| %>
-  				<div class="story">
-				    <p><%= story.name %>... <a href="<%= story.url %> ">Read More</a></p>
-  				  </div>
-		    <% end %>
-        </div>
-        
-      </div>
-      
-    </div>
-
-    
+    <% end %>
   </div>
-
 </section>
