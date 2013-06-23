@@ -233,12 +233,6 @@ ActiveRecord::Schema.define(:version => 20130622023955) do
     t.datetime "updated_at", :null => false
   end
 
-  create_table "world_feeds", :force => true do |t|
-    t.string   "url"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
   create_table "world_news_stories", :force => true do |t|
     t.string   "name"
     t.text     "summary"
@@ -250,28 +244,6 @@ ActiveRecord::Schema.define(:version => 20130622023955) do
   end
 
   create_table "world_news_story_feeds", :force => true do |t|
-    t.string   "url"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  create_table "world_stories", :force => true do |t|
-    t.string   "name"
-    t.text     "summary"
-    t.string   "url"
-    t.datetime "published_at"
-    t.string   "guid"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
-  end
-
-  create_table "world_story_feeds", :force => true do |t|
-    t.string   "url"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  create_table "world_story_news_feeds", :force => true do |t|
     t.string   "url"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
