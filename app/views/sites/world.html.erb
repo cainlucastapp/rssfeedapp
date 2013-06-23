@@ -1,0 +1,10 @@
+<h1>WORLD NEWS</h1>
+
+<% @worldrss.each do |story| %>
+  <div class="story">
+    <h2><%= story.name %></h2>
+    <p><%= Nokogiri::HTML(story.summary).text %>
+     <a href="<%= story.url %> ">Read More</a> </p>
+    
+  </div>
+<% end %>

@@ -1,0 +1,137 @@
+// Place all the styles related to the sites controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+
+
+// Navigation Color Scheme for Site Home
+#nav 
+{   
+	background-image: -ms-linear-gradient(top, #FF7340 0%, #910606 100%);
+	background-image: -moz-linear-gradient(top, #FF7340 0%, #910606 100%);
+	background-image: -o-linear-gradient(top, #FF7340 0%, #910606 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FF7340), color-stop(1, #910606));
+	background-image: -webkit-linear-gradient(top, #FF7340 0%, #910606 100%);
+	background-image: linear-gradient(to bottom, #FF7340 0%, #910606 100%);	
+}
+
+#nav li a
+{
+	color:white;
+	font-style: bold;
+}
+
+#nav li a:hover 
+{
+	background-image: -ms-linear-gradient(top, #FFFFFF 0%, #E6E6E6 100%);
+	background-image: -moz-linear-gradient(top, #FFFFFF 0%, #E6E6E6 100%);
+	background-image: -o-linear-gradient(top, #FFFFFF 0%, #E6E6E6 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #E6E6E6));
+	background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #E6E6E6 100%);
+	background-image: linear-gradient(to bottom, #FFFFFF 0%, #E6E6E6 100%);	
+  	color:black;
+}
+
+// Sites CSS
+#sites-index-container
+{
+	height:600px;
+	width:100%;
+	background:white;
+	margin-bottom: 10px;
+}
+
+#left-side
+{
+	height:100%;
+	width:551px;
+}
+
+#right-side
+{
+	width:408px;
+	height:100%;
+}
+
+#world-stories
+{
+	height:298px;
+	width:272px;
+	margin-left: 3px;
+	border-right: 1px solid #BDBDBD;
+}
+
+#us-stories
+{
+	height:298px;
+	width:272px;
+	margin-left: 3px;
+}
+
+#stories-wrapper
+{
+	height:300px;
+}
+
+#top-issue
+{
+	height:295px;
+	width:170px;
+	margin-left: 3px;
+}
+
+#issue-wrapper
+{
+	width:100%;
+}
+
+#issue-divider
+{
+	border-top: 1px solid #BDBDBD;
+	width:99%;
+	margin-left: 3px;
+}
+
+.issue-line
+{
+	border-right: 1px solid #BDBDBD;
+	margin-top:3px;
+}
+
+#row
+{
+	height:99.8%;
+	width:197.5px;
+	margin-left: 3px;
+	border-left: 1px solid #BDBDBD;
+}
+
+#side-issue
+{
+	height:185px;
+	margin-left: 3px;
+}
+
+#stock-row
+{
+	margin-left: 3px;
+}
+
+.side-divider
+{
+	border-bottom: 1px solid #BDBDBD;
+}
+
+#side-issue-wrapper
+{
+	width:99.5%;
+}
+
+
+
+
+
+
+

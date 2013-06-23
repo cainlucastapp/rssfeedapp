@@ -1,0 +1,191 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+
+/* QUICK RULES */
+.pull-right {
+	float: right;
+}
+.pull-left {
+	float: left;
+}
+.indent {
+	margin-left: 10px;
+}
+.clearfix {
+	clear: both;
+}
+.center {
+	margin-left:auto;
+	margin-right:auto;
+	width:70%;
+}
+
+
+/* HEADER RULES */
+
+.header-container{
+	height: 145px;
+	width: auto;
+	background: white;
+}
+
+#main-header {
+	border-bottom: 0px solid #000000;
+}
+
+.subscribe{
+	margin-top: 15px;
+}
+
+
+/* title css */
+.head-title{
+	height: 95px;
+}
+
+#head{
+	font-size: 80px;
+	font-style: bold;
+	font-family: "Times New Roman";
+	margin-top: 35px;
+	padding-left: 10px;
+}
+
+
+/* FOOTER RULES */
+
+#main-footer
+{	
+	height: 160px;
+	width: auto;
+	background: #DEDEDE;
+}
+
+.footer-container
+{
+	margin-left: 40px;
+	margin-top: 15px;
+}
+
+.footer-line
+{
+	border-right: 1px solid #BDBDBD;
+}
+
+.footer-row-one
+{
+	width: 130px;
+	height: 130px;
+
+}
+
+.footer-row
+{
+	width: 180px;
+	height: 130px;
+	margin-left: 10px;
+}
+
+#footer-list li a
+{
+   	font-size: 11px;
+	color:gray;
+	text-decoration: none;
+}
+
+#footer-list li a:hover 
+{
+	background: transparent;
+	text-decoration: underline;
+}
+
+#footer-indent
+{
+	margin-left: 26px;
+}
+
+.footer-row-two
+{
+	margin-top: 48px;
+}
+
+
+/* site-container css */
+body 
+{
+	background: white !important;
+}
+
+.site-container
+{
+	width: 960px;
+    height: auto;
+    margin: 0 auto;
+	background: white;
+	padding: 20px;
+}
+
+
+/* navigation bar css */
+#nav-container
+{	
+	width:100%;		
+}
+
+#nav
+{
+	padding:0;
+    width:100%;
+	height:30px;
+    padding-top:8px;
+    margin: 0 auto;
+	text-align:center;
+}
+
+#nav
+{
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+#nav li 
+{
+    display:inline;	
+}
+
+#nav li a 
+{   
+   font-family:Arial;
+   font-size:13px;
+   text-decoration: none;
+   padding:10px;
+   margin:1px;
+}
+
+#nav li a:hover 
+{
+   padding-top:12px;
+   padding-bottom:12px;
+   border:2px;
+   border-color:#DEDEDE;
+   border-style:solid;
+   margin:0px;
+   border-radius:5px;
+}
+
+.nav-line{
+	border-right: 1px solid #BDBDBD;
+}
+
