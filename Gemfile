@@ -4,7 +4,7 @@ gem 'rails', '3.2.13'
 
 gem 'sqlite3'
 gem 'activeadmin'
-gem 'jquery-rails'
+gem 'jquery-rails', '~> 2.3.0'
 gem "meta_search",    '>= 1.1.0.pre'
 gem "feedzirra", '0.2.0.rc2'
 gem "nokogiri"
